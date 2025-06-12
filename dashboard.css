@@ -1,0 +1,167 @@
+/* Dark theme variables */
+:root {
+    --dark-bg: #1a1a1a;
+    --darker-bg: #141414;
+    --sidebar-bg: #242424;
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --border-color: #333333;
+    --card-bg: #2a2a2a;
+    --danger: #e74c3c;
+    --success: #2ecc71;
+    --warning: #f1c40f;
+}
+
+/* Global styles */
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+/* Header styles */
+header.bg-primary {
+    background-color: var(--darker-bg) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: var(--sidebar-bg) !important;
+    border-right: 1px solid var(--border-color);
+    min-height: 100vh;
+}
+
+.sidebar .nav-item .btn-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.sidebar .nav-item .btn-link:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-item .btn-link i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: var(--text-primary);
+}
+
+/* Table styles */
+.table {
+    color: var(--text-primary);
+    background-color: var(--card-bg);
+}
+
+.table thead th {
+    background-color: var(--darker-bg);
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.table td, .table th {
+    border-color: var(--border-color);
+}
+
+.table-bordered {
+    border-color: var(--border-color);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    border-color: var(--warning);
+    color: #000;
+}
+
+/* Form styles */
+.form-control {
+    background-color: var(--darker-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.form-control:focus {
+    background-color: var(--darker-bg);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Status indicators */
+.badge {
+    padding: 0.5em 1em;
+}
+
+/* Hover effects */
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Transitions */
+.btn, .nav-link, .form-control {
+    transition: all 0.3s ease;
+}
+
+/* Tab content */
+.tab-content {
+    background-color: var(--dark-bg);
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
